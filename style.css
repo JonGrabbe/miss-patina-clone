@@ -17,9 +17,12 @@ ul {
 header {
     display: flex;
     align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 .logo {
-    
+    width: 250px;
+    margin-right: auto;
 }
 .header-link {
     margin-right: 20px;
@@ -35,8 +38,12 @@ header {
     width: 30px;
     height: 30px;
 }
+.menu-link {
+    margin-right: 25px;
+}
 .account-link {
     background-image: url('images/my-account-cat-icon.png');
+    margin-left: auto;
 }
 .cart-link {
     background-image: url('images/shopping-cart.svg');

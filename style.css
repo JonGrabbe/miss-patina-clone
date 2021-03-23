@@ -24,3 +24,12 @@ header {
 .small-icon-c img {
     width: 10px;
 }
+/* menu icons */
+.account-link {
+    background-image: url('images/my-account-cat-icon.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}

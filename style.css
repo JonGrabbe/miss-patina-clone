@@ -90,6 +90,15 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
 }
+/* transition menu class use js*/
+.an-menu-up-vis {
+    
+}
+@keyframes menu-up {
+    0% {
+        display: flex;
+    }
+}
 
 
 

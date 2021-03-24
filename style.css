@@ -72,6 +72,10 @@ header {
     visibility: visible;
     width: 100%;
 }
+#shop-link:hover .bdr-slide::after {
+    visibility: visible;
+    width: 100%;
+}
 /* drop down menus */
 #shop-link {
     position: relative;
@@ -80,17 +84,23 @@ header {
 #shop-link:hover .shop-container,
 #shop-link:focus-within .shop-container {
     visibility: initial;
+    transform: translateY(0);
+    opacity: 1;
 }
 .shop-container {
     visibility: hidden;
+    opacity: 0;
     position: absolute;
     display: flex;
     top: 100%;
     left: -300px;
+    width: 900px;
     border: 1px solid red;
     padding: 25px;
     background-color: white;
-    width: 900px;
+    overflow: hidden;
+    transform: translateY(50px);
+    transition: all .3s;
 }
 .shop-container ul {
     margin-right: 30px;

@@ -74,7 +74,7 @@ header {
 }
 /* drop down menus */
 .shop-container {
-    display: flex;
+    display: none;
     position: absolute;
     top: 100px;
     left: 500px;
@@ -92,12 +92,23 @@ header {
 }
 /* transition menu class use js*/
 .an-menu-up-vis {
-    
+    display: flex;
+    animation: menu-up .4s linear;
 }
 @keyframes menu-up {
     0% {
-        display: flex;
+        opacity: 0;
+        transform: translateY(50px);
     }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.an-menu-up-vis-t {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 

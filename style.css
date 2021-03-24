@@ -19,6 +19,7 @@ header {
     align-items: center;
     padding-left: 10vw;
     padding-right: 10vw;
+    position: relative;
 }
 .logo {
     width: 250px;
@@ -69,5 +70,34 @@ header {
 .bdr-slide:hover.bdr-slide::after,
 .bdr-slide:focus.bdr-slide::after {
     visibility: visible;
+    width: 100%;
+}
+/* drop down menus */
+.shop-container {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    border: 1px solid red;
+    padding: 25px;
+    background-color: white;
+}
+.shop-container ul {
+    margin-right: 30px;
+}
+.item-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+
+
+
+
+
+
+/* MAIN */
+.hero {
     width: 100%;
 }

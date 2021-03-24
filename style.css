@@ -73,14 +73,24 @@ header {
     width: 100%;
 }
 /* drop down menus */
+#shop-link {
+    position: relative;
+    padding: 35px;
+}
+#shop-link:hover .shop-container,
+#shop-link:focus-within .shop-container {
+    visibility: initial;
+}
 .shop-container {
-    display: none;
+    visibility: hidden;
     position: absolute;
-    top: 100px;
-    left: 500px;
+    display: flex;
+    top: 100%;
+    left: -300px;
     border: 1px solid red;
     padding: 25px;
     background-color: white;
+    width: 900px;
 }
 .shop-container ul {
     margin-right: 30px;

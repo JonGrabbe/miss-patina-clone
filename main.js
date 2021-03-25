@@ -36,7 +36,12 @@ for(let i=0; i<gridItems.length; i++) {
 
 
 //flesh effect
-function flashEffect(e) {
-    
+function flashEffectDown(e) {
+    document.getElementById('ageless').classList.add('flash-effect-start-down');
+    document.getElementById('ageless').classList.remove('flash-effect-start-up');
 }
-document.getElementById('ageless').addEventListener('mouseover', flashEffect)
+function flashEffectUp(e) {
+    document.getElementById('ageless').classList.add('flash-effect-start-up');
+}
+document.getElementById('ageless').addEventListener('mouseover', flashEffectDown);
+document.getElementById('ageless').addEventListener('mouseleave', flashEffectUp);

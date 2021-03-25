@@ -16,11 +16,11 @@
 /* .flash-effect:hover.flash-effect:before {
     animation: flashEffect .6s linear;
 } */
-.flash-effect-start-down {
-    animation: flashEffect .6s linear;
+.flash-effect-start-down.flash-effect:before {
+    animation: flashEffect .3s linear;
 }
-.flash-effect-start-up  {
-    animation: flashEffectUp .6s linear;
+.flash-effect-start-up.flash-effect:before  {
+    animation: flashEffectUp .3s linear;
 }
 @keyframes flashEffect {
     0% {

@@ -10,6 +10,10 @@ ul {
     list-style-type: none;
 }
 
+/* colors*/
+:root {
+    --primary-color: #6da5a2;
+}
 
 
 
@@ -20,6 +24,12 @@ header {
     padding-left: 10vw;
     padding-right: 10vw;
     position: relative;
+}
+/* header announcemnet banner */
+.header-banner {
+    padding: 15px;
+    background-color: var(--primary-color);
+    text-align: center;
 }
 .logo {
     width: 250px;

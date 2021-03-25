@@ -1,0 +1,20 @@
+.scroll-down {
+    padding-bottom: 0;
+    animation: scroll-down 1s ease-in-out;
+    position: fixed;
+}
+.scroll-down .header-content {
+    /* display: none; */
+}
+.scroll-up {
+
+}
+
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

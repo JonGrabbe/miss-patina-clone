@@ -18,6 +18,12 @@ ul {
 
 
 /* header */
+header {
+    width: 100%;
+    background-color: white;
+    padding-bottom: 60px;
+    transition: all .8s;
+}
 header .header-content {
     display: flex;
     align-items: center;
@@ -150,4 +156,7 @@ header .header-content {
 /* MAIN */
 .hero {
     width: 100%;
+}
+main {
+    margin-bottom: 900px;
 }

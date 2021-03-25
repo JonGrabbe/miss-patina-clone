@@ -28,6 +28,15 @@ function imageRollOver(e) {
     let elm = e.currentTarget;
     elm.classList.toggle('fade-img-a')
 }
-for(let i=0; i<=gridItems.length; i++) {
+for(let i=0; i<gridItems.length; i++) {
     document.getElementsByClassName('grid-item')[i].addEventListener('click', imageRollOver);
 }
+
+
+
+
+//flesh effect
+function flashEffect(e) {
+    
+}
+document.getElementById('ageless').addEventListener('mouseover', flashEffect)

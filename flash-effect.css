@@ -13,8 +13,14 @@
     right: 0;
     visibility: hidden;
 }
-.flash-effect:hover.flash-effect:before {
+/* .flash-effect:hover.flash-effect:before {
     animation: flashEffect .6s linear;
+} */
+.flash-effect-start-down {
+    animation: flashEffect .6s linear;
+}
+.flash-effect-start-up  {
+    animation: flashEffectUp .6s linear;
 }
 @keyframes flashEffect {
     0% {
@@ -23,5 +29,14 @@
     }
     100% {
         transform: translateY(600px);
+    }
+}
+@keyframes flashEffectUp {
+    0% {
+        visibility: visible;
+        transform: translateY(700px);
+    }
+    100% {
+        transform: translateY(-100px);
     }
 }

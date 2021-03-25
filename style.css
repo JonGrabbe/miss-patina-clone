@@ -165,3 +165,16 @@ main {
     width: 70vw;
     margin: auto;
 }
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aside-block {
+    width: 400px;
+    height: 600px;
+    background-image: url('images/grandma.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

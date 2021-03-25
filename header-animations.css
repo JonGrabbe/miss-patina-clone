@@ -3,8 +3,8 @@
     animation: scroll-down 1s ease-in-out;
     position: fixed;
 }
-.scroll-down .header-content {
-    /* display: none; */
+.scroll-down .header-banner {
+    display: none;
 }
 .scroll-up {
 

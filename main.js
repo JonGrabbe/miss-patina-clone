@@ -18,3 +18,22 @@ window.onscroll = function() {
         document.getElementById('header').classList.remove('scroll-down')
     }
 }
+
+
+
+//image rollover
+//add event listeners
+let gridItems = document.getElementsByClassName('grid-item');
+function imageRollOver(e) {
+    let elm = e.currentTarget;
+    let currentImageSrc = elm.getElementsByClassName('grid-item-img')[0].getAttribute('src')
+    console.log(currentImageSrc)
+    if(currentImageSrc === 'dress1.jpg') {
+        elm.innerHTML = '<img src="images/purse1.jpg" class="grid-item-img"/>';
+    } else {
+        elm.innerHTML = '<img src="images/dress1.jpg" class="grid-item-img"/>';
+    }
+}
+for(let i=0; i<=gridItems.length; i++) {
+    document.getElementsByClassName('grid-item')[i].addEventListener('click', imageRollOver);
+}

@@ -1,0 +1,15 @@
+.products-grid {
+    margin-top: 300px;
+    padding: 50px;
+}
+.grid-item {
+    width: 250px;
+    border: 1px solid grey;
+}
+.grid-item img {
+    width: 100%;
+}
+
+.grid-image-transition img  {
+    display: none;
+}

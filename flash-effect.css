@@ -13,6 +13,15 @@
     right: 0;
     visibility: hidden;
 }
-.flash-effect:hover {
-    
+.flash-effect:hover.flash-effect:before {
+    animation: flashEffect .6s linear;
+}
+@keyframes flashEffect {
+    0% {
+        visibility: visible;
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(600px);
+    }
 }

@@ -161,3 +161,7 @@ header .header-content {
 main {
     margin-bottom: 900px;
 }
+.center-wrapper {
+    width: 70vw;
+    margin: auto;
+}

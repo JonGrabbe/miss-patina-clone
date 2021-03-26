@@ -9,6 +9,7 @@
 .grid-item {
     width: 250px;
     /* border: 1px solid grey; */
+    /* height: 80%; */
 }
 .grid-item img {
     width: 100%;

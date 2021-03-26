@@ -28,8 +28,17 @@ function imageRollOver(e) {
     let elm = e.currentTarget;
     elm.classList.toggle('fade-img-a')
 }
+function imageRollMouseOn(e) {
+    let elm = e.currentTarget;
+    elm.classList.add('fade-img-a');
+}
+function imageRollMouseLeave(e) {
+    let elm = e.currentTarget;
+    elm.classList.remove('fade-img-a');
+}
 for(let i=0; i<gridItems.length; i++) {
-    document.getElementsByClassName('grid-item')[i].addEventListener('click', imageRollOver);
+    document.getElementsByClassName('grid-item')[i].addEventListener('mouseover', imageRollMouseOn);
+    document.getElementsByClassName('grid-item')[i].addEventListener('mouseleave', imageRollMouseLeave);
 }
 
 

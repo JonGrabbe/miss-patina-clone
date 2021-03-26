@@ -15,6 +15,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 .grid-item img {
     width: 100%;
@@ -33,13 +34,16 @@
 /* grid item links */
 .grid-item-buttons-container {
     position: absolute;
-    bottom: 20px;
+    bottom: -50px;
     left: 0;
     z-index: 20;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
 }
 .grid-item-buttons-container a {
     display: inline-block;
@@ -57,4 +61,16 @@
     background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
+}
+.grid-item-buttons-container .compare-link {
+    background-image: url('images/share.svg');
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* animate */
+.grid-item:hover .grid-item-buttons-container {
+    bottom: 30px;
+    visibility: visible;
+    opacity: 1;
 }

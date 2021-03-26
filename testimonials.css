@@ -1,0 +1,6 @@
+.testimonials-container {
+    height: 800px;
+    background-image: url('images/angel-cat-bg.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

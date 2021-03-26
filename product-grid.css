@@ -9,7 +9,11 @@
 .grid-item {
     width: 250px;
     /* border: 1px solid grey; */
-    /* height: 80%; */
+    height: 390px;
+    background-image: url('images/purse1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .grid-item img {
     width: 100%;
@@ -20,12 +24,6 @@
 
 .grid-image-transition img  {
     display: none;
-}
-#dress1 {
-    background-image: url('images/purse1.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .fade-img-a img {
     opacity: 0;

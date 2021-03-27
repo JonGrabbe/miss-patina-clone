@@ -34,16 +34,13 @@
 /* grid item links */
 .grid-item-buttons-container {
     position: absolute;
-    bottom: -50px;
+    bottom: 30px;
     left: 0;
     z-index: 20;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    visibility: hidden;
-    opacity: 0;
-    transition: all .5s ease-in-out;
 }
 .grid-item-buttons-container a {
     display: inline-block;
@@ -51,6 +48,9 @@
     width: 50px;
     height: 50px;
     background-color: white;
+    position: relative;
+    bottom: -80px;
+    opacity: 0;
 }
 .grid-item-buttons-container .tool-tip {
     visibility: hidden;
@@ -69,8 +69,13 @@
     background-repeat: no-repeat;
 }
 /* animate */
-.grid-item:hover .grid-item-buttons-container {
-    bottom: 30px;
-    visibility: visible;
+.grid-item:hover .grid-item-buttons-container a {
+    bottom: 0;
     opacity: 1;
+}
+.select-link {
+    transition: all .6s ease-in-out;
+}
+.compare-link {
+    transition: all .6s ease-in-out .1s;
 }

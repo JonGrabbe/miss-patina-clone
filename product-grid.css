@@ -51,6 +51,7 @@
     position: relative;
     bottom: -80px;
     opacity: 0;
+    visibility: hidden;
 }
 .grid-item-buttons-container .tool-tip {
     visibility: hidden;
@@ -72,10 +73,15 @@
 .grid-item:hover .grid-item-buttons-container a {
     bottom: 0;
     opacity: 1;
+    visibility: visible;
+}
+.grid-item-buttons-container a:hover {
+    transition: none;
+    background-color: lightgray;
 }
 .select-link {
     transition: all .6s ease-in-out;
 }
 .compare-link {
-    transition: all .6s ease-in-out .1s;
+    transition: all .6s ease-in-out .2s;
 }

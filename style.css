@@ -182,6 +182,9 @@ main {
 }
 /* back to top btn */
 .back-to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -197,10 +200,11 @@ main {
 .back-to-top-btn:hover {
     background-color: var(--primary-color);
 }
-.back-to-top-btn:hover img {
-    color: red;
+.back-to-top-btn:hover svg {
+    fill: white;
 }
-.back-to-top-btn img {
+.back-to-top-btn svg {
     width: 50%;
     transform: rotate(-90deg);
+    fill: var(--primary-color);
 }
